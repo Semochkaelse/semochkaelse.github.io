@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=1600);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Merriweather', serif;
+}
+
+.container {
+    margin: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+input {
+    display: block;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+    background: none;
+    padding-left: 10px;
+}
+
+input:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.btn {
+    height: 40px;
+    background: none;
+    border: none;
+    outline: 1px solid green;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.clear {
+    outline: 1px solid red;
+    width: 30vw;
+}
+
+.mainUsers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+}
+
+.user {
+    background-color: #f5f1f1;
+    width: 40vw;
+    margin-bottom: 10px;
+}
+
+.user-outer {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(https://images.pexels.com/photos/82256/pexels-photo-82256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 20px;
+    color: rgb(0, 0, 0);
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.delete,
+.change {
+    border: none;
+    height: 40%;
+    color: white;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.delete {
+    background: linear-gradient(rgb(233, 7, 45), 30%, rgb(90, 90, 87));
+}
+
+.change {
+    background: linear-gradient(rgb(15, 243, 15), rgb(92, 94, 95));
+}
+
+.delete:hover, .change:hover, .btn:hover{
+    opacity: 80%;
+}
